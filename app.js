@@ -125,4 +125,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    window.setInterval(function(){
+        checkRowForThree()
+        checkColumnForThree()
+    }, 100)
 })
