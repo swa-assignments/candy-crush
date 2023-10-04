@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     }
-    
+
     checkRowForThree()
 
     // Check column for three
@@ -172,8 +172,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-    window.setInterval(function(){
+    window.setInterval(function () {
+        checkRowForFour()
+        checkColumnForFour()
         checkRowForThree()
         checkColumnForThree()
+
     }, 100)
 })
